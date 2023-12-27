@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parroquia Dios Padre Misericordioso de Monterrey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('imagen para el fondo del buscador.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        h1, h2, h3 {
+            color: white; /* Cambiar el color del texto */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agregar sombra al texto */
+            text-align: center;
+            padding: 20px 0;
+        }
+        form {
+            width: 330px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8); /* Agregar un fondo semi-transparente */
+            padding: 20px;
+            padding-bottom: 50px;
+            border-radius: 8px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="date"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registro de Fe de Bautizo</h1>
+    <h2>Parroquia Dios Padre Misericordioso de Monterrey</h2>
+    <h3>Ingrese los datos para poder buscar</h3>
+    <form>
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre"><br>
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido"><br>
+        <label for="tipo">Tipo de Dato:</label><br>
+        <select id="tipo" name="tipo">
+            <option value="bautizo">Bautizo</option>
+            <option value="matrimonio">Matrimonio</option>
+            <option value="primera_comunion">Primera Comunión</option>
+            <option value="confirmacion">Confirmación</option> <!-- Nuevo campo agregado -->
+        </select><br>
+        <label for="fecha">Fecha:</label><br>
+        <input type="date" id="fecha" name="fecha"><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
