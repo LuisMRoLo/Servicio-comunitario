@@ -1,0 +1,461 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('imagen para el fondo del buscador.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.body-registro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+table {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+tr {
+    background-color: #ffffff;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+#botonInsertar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#botonInsertar:hover {
+    background-color: #45a049;
+}
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+select:focus {
+    border-color: #4CAF50;
+    background-color: #e8f0e8;
+}
+
+#botonRegreso {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#botonRegreso:hover {
+    background-color: #45a049;
+}
+.centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formulario-estilizado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.etiqueta-estilizada {
+    align-self: flex-start;
+}
+h1 {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.certificado {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.formulario-iniciar-Sesion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    max-height: 80vh;
+    overflow-y: auto;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+    position: relative;
+    top: 50%; /* Centra el formulario verticalmente */
+    transform: translateY(-50%); /* Centra el formulario verticalmente */
+}
+
+h2 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.formulario-registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    max-height: 80vh;
+    overflow-y: auto;
+    width: 80%;
+    max-width: 500px;
+}
+
+.formulario-registro h2 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.formulario-registro input[type="text"],
+.formulario-registro input[type="date"],
+.formulario-registro input[type="email"],
+.formulario-registro input[type="password"],
+.formulario-registro select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.formulario-registro input[type="text"]:focus,
+.formulario-registro input[type="date"]:focus,
+.formulario-registro input[type="email"]:focus,
+.formulario-registro input[type="password"]:focus,
+.formulario-registro select:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px #4CAF50;
+}
+
+.formulario-registro input[type="submit"],
+.formulario-registro button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+
+.formulario-registro input[type="submit"]:hover,
+.formulario-registro button:hover {
+    background-color: #45a049;
+}
+
+.formulario-inicio-sesion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    max-height: 80vh;
+    overflow-y: auto;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.formulario-inicio-sesion h2 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.formulario-inicio-sesion input[type="text"],
+.formulario-inicio-sesion input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.formulario-inicio-sesion input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.formulario-inicio-sesion input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.obligatorio::after {
+    content: " *";
+    color: red;
+    font-size: 20px; /* Hacer el asterisco un poco más grande */
+}
+
+.obligatorio {
+    color: #4CAF50; /* Hacer el texto de los campos obligatorios verde */
+    font-weight: bold; /* Hacer el texto de los campos obligatorios en negrita */
+}
+
+.opciones-registros a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-registros:hover .opciones-registros {
+    display: block;
+}
+
+#botonRegistro {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+#botonRegistro:hover {
+    background-color: #45a049;
+}
+
+#botonInsertar {
+    display: inline-block; 
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+#botonInsertar:hover {
+    background-color: #45a049;
+}
+.menu-registros {
+    position: relative;
+    display: inline-block;
+}
+
+.opciones-registros {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #f9f9f9;
+}
+
+.opciones-registros a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-registros:hover .opciones-registros {
+    display: block;
+}
+/* Estilo para el botón de Iniciar Sesión */
+button#iniciarSesion {
+    background-color: #008CBA; /* Color de fondo azul */
+    border: none;
+    color: white; /* Texto blanco */
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* Estilo para el botón de Cerrar Sesión */
+button#cerrarSesion {
+    background-color: #f44336; /* Color de fondo rojo */
+    border: none;
+    color: white; /* Texto blanco */
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+/* Estilo para el contenedor del menú de registros */
+div.menu-registros {
+    width: 200px;
+    background-color: #f1f1f1;
+    border: 1px solid #d4d4d4;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Estilo para el botón de registros */
+div.menu-registros button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+/* Estilo para las opciones de registros */
+div.menu-registros div.opciones-registros a {
+    display: block;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* Cambiar el color de fondo al pasar el mouse sobre las opciones de registros */
+div.menu-registros div.opciones-registros a:hover {
+    background-color: #ddd;
+}
+.input-group-identidad {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-group-identidad select {
+    width: 70px;
+    margin-right: 5px;
+}
+
+.input-group-identidad input {
+    flex-grow: 1;
+}
